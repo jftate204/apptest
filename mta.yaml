@@ -61,20 +61,6 @@ modules:
     commands:
     - npm run build
     supported-platforms: []
-- name: apptest-flp
-  type: com.sap.application.content
-  path: apptest-flp
-  requires:
-  - name: portal_resources_appTest
-    parameters:
-      content-target: true
-      service-key:
-        config:
-          content-endpoint: developer
-        name: content-deploy-key
-  - name: appTest_html_repo_host
-  - name: appTest_ui_deployer
-  - name: uaa_appTest
 resources:
 - name: workflow-srv
   type: org.cloudfoundry.managed-service
